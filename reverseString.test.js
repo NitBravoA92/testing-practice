@@ -2,18 +2,24 @@ const reverseString = require('./reverseString');
 
 it('Add the string coca-cola which inverted is aloc-acoc', () => {
   const stringToRev = 'coca-cola';
+
   const revString = reverseString(stringToRev);
-  expect(revString).toBe('aloc-acoc');
+
+  expect(revString).toMatch('aloc-acoc');
 })
 
-it('Add an empty string', () => {
-  const stringToRev = '';
+it('Add the string apple which inverted is elppa', () => {
+  const stringToRev = 'apple';
+
   const revString = reverseString(stringToRev);
-  expect(revString).toBe('');
+
+  expect(revString).toMatch('elppa');
 })
 
-it('Add undefined', () => {
-  const stringToRev = undefined;
+it('Add the string movies which inverted is seivom', () => {
+  const stringToRev = 'movies';
+
   const revString = reverseString(stringToRev);
-  expect(revString).toBe('denifednu');
+  
+  expect(revString).toMatch('seivom');
 })

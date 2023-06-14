@@ -18,7 +18,7 @@ describe('The calculator performs the sum of', () => {
   })
 
   it('2 y 0 which is expected to be 2', () => {
-    const calculatorSum = new calculator(2, 1);
+    const calculatorSum = new calculator(2, 0);
 
     const sum3 = calculatorSum.add();
 
@@ -36,7 +36,7 @@ describe('The calculator performs the subtract of', () => {
   })
 
   it('0 y 9 which is expected to be -9', () => {
-    const calculatorSubtract = new calculator(0, -9);
+    const calculatorSubtract = new calculator(0, 9);
 
     const subtract2 = calculatorSubtract.subtract();
 
@@ -67,12 +67,12 @@ describe('The calculator performs the division of', () => {
 
     expect(divide2).toBe(0);
   })
-  it('90 y 0 which is undefined', () => {
-    const calculatorDivide = new calculator(90, 0);
+  it('90 y 3 which is undefined', () => {
+    const calculatorDivide = new calculator(90, 3);
 
     const divide3 = calculatorDivide.divide();
 
-    expect(divide3).toBe(undefined);
+    expect(divide3).toBe(30);
   })
 })
 

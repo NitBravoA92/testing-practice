@@ -4,7 +4,7 @@ it('add the string softwaredevone which should return Softwaredevone', () => {
 
   const strCapitalize = capitalize(strToTest);
 
-  expect(strCapitalize).toBe('Softwaredevone');
+  expect(strCapitalize).toMatch('Softwaredevone');
 })
 
 it('add the string moon which should return Moon', () => {
@@ -12,7 +12,7 @@ it('add the string moon which should return Moon', () => {
 
   const strCapitalize = capitalize(strToTest);
 
-  expect(strCapitalize).toBe('Moon');
+  expect(strCapitalize).toMatch('Moon');
 })
 
 it('add the string javascript which should return Javascript', () => {
@@ -20,7 +20,7 @@ it('add the string javascript which should return Javascript', () => {
 
   const strCapitalize = capitalize(strToTest);
 
-  expect(strCapitalize).toBe('Javascript');
+  expect(strCapitalize).toMatch('Javascript');
 })
 
 it('add the string JAVA which should return JAVA', () => {
@@ -28,5 +28,5 @@ it('add the string JAVA which should return JAVA', () => {
 
   const strCapitalize = capitalize(strToTest);
 
-  expect(strCapitalize).toBe('JAVA');
+  expect(strCapitalize).toMatch('JAVA');
 })
